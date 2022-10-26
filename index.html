@@ -37,10 +37,10 @@
                     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
                     <!-- Selection of music genra drop down buttons -->
                     <div class="inline-flex items-stretch rounded-md border bg-white" x-data="{ isActive: false }">
-                        <a href="/edit"
+                        <p
                             class="rounded-l-md px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-700">
                             Select Music Genre
-                        </a>
+                        </p>
 
                         <div class="relative">
                             <button type="button" x-on:click="isActive = !isActive"
@@ -58,51 +58,51 @@
                                 role="menu" x-cloak x-transition x-show="isActive" x-on:click.away="isActive = false"
                                 x-on:keydown.escape.window="isActive = false">
                                 <div class="p-2">
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                    <a href="#" 
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem" 
+                                        role="menuitem" data-type="music">
                                         Blues
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="music">
                                         Country
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="music">
                                         Dance
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="music">
                                         Jazz
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="music">
                                         Rhythm & Blues
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="music">
                                         Rock
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="music">
                                         Rock & Roll
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="music">
                                         Soul
                                     </a>
                                 </div>
@@ -112,10 +112,10 @@
 
                     <!-- Selection of base beverages drop down buttons-->
                     <div class="inline-flex items-stretch rounded-md border bg-white" x-data="{ isActive: false }">
-                        <a href="/edit"
+                        <p
                             class="rounded-l-md px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-700">
                             Base Beverage Selection
-                        </a>
+                        </p>
                         <div class="relative">
                             <button type="button" x-on:click="isActive = !isActive"
                                 class="inline-flex h-full items-center justify-center rounded-r-md border-l border-gray-100 px-2 text-gray-600 hover:bg-gray-50 hover:text-gray-700">
@@ -132,50 +132,50 @@
                                 x-on:keydown.escape.window="isActive = false">
                                 <div class="p-2">
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="drinks">
                                         Light Beer
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="drinks">
                                         Dark Beer
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="drinks">
                                         Red Wine
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="drinks">
                                         White Wine
                                     </a>
 
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                    <a href="#" 
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="drinks">
                                         Rum
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="drinks">
                                         Tequila
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="drinks">
                                         Vodka
                                     </a>
 
                                     <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                        role="menuitem">
+                                        class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 menuItem"
+                                        role="menuitem" data-type="drinks">
                                         Whiskey
                                     </a>
                                 </div>
@@ -183,5 +183,6 @@
                         </div>
                     </div>
     </section>
+    <script src="./assets/jss/script.js"></script>
 </body>
 </html>
